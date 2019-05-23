@@ -6,6 +6,8 @@ import com.graphqljava.tutorial.bookdetails.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 
 @Component
 public class Query implements GraphQLQueryResolver {
@@ -16,5 +18,9 @@ public class Query implements GraphQLQueryResolver {
 
     public Book bookById(String id) {
         return bookRepository.findById(id);
+    }
+
+    public List<Book> allBooks() {
+        return bookRepository.getAllBooks();
     }
 }
