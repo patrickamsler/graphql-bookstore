@@ -1,6 +1,6 @@
-package graphq.bookstore.repository;
+package graphql.bookstore.repository;
 
-import graphq.bookstore.model.Order;
+import graphql.bookstore.model.Order;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

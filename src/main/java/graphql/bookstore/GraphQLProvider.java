@@ -1,11 +1,11 @@
-package graphq.bookstore;
+package graphql.bookstore;
 
 import com.coxautodev.graphql.tools.SchemaParser;
-import graphq.bookstore.resolver.AuthorResolver;
-import graphq.bookstore.resolver.Mutation;
-import graphq.bookstore.resolver.OrderResolver;
-import graphq.bookstore.resolver.Query;
-import graphq.bookstore.scalar.Timestamp;
+import graphql.bookstore.resolver.AuthorResolver;
+import graphql.bookstore.resolver.Mutation;
+import graphql.bookstore.resolver.OrderResolver;
+import graphql.bookstore.resolver.Query;
+import graphql.bookstore.scalar.Timestamp;
 import graphql.GraphQL;
 import graphql.schema.GraphQLSchema;
 import org.springframework.beans.factory.annotation.Autowired;

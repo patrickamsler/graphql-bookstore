@@ -1,4 +1,4 @@
-package graphq.bookstore.scalar;
+package graphql.bookstore.scalar;
 
 import graphql.schema.*;
 
