@@ -3,4 +3,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'book-details'
+rootProject.name = 'graphql-bookstore'
