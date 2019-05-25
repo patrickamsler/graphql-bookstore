@@ -5,7 +5,9 @@ import com.graphqljava.tutorial.bookdetails.resolver.AuthorResolver;
 import com.graphqljava.tutorial.bookdetails.resolver.Mutation;
 import com.graphqljava.tutorial.bookdetails.resolver.OrderResolver;
 import com.graphqljava.tutorial.bookdetails.resolver.Query;
+import com.graphqljava.tutorial.bookdetails.scalar.Timestamp;
 import graphql.GraphQL;
+import graphql.schema.GraphQLScalarType;
 import graphql.schema.GraphQLSchema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -42,6 +44,7 @@ public class GraphQLProvider {
         return SchemaParser.newParser()
                 .file("schema.graphql")
                 .resolvers(query, mutation, orderResolver, authorResolver)
+                .scalars(Timestamp.buildScalar())
                 .build()
                 .makeExecutableSchema();
     }

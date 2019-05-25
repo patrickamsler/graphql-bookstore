@@ -25,5 +25,8 @@ type Author {
 
 type Order {
   id: ID
+  orderDate: Timestamp
   book: Book
 }
+
+scalar Timestamp
