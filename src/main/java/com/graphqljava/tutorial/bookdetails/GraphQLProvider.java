@@ -1,7 +1,7 @@
 package com.graphqljava.tutorial.bookdetails;
 
 import com.coxautodev.graphql.tools.SchemaParser;
-import com.graphqljava.tutorial.bookdetails.resolver.BookResolver;
+import com.graphqljava.tutorial.bookdetails.resolver.AuthorResolver;
 import com.graphqljava.tutorial.bookdetails.resolver.Mutation;
 import com.graphqljava.tutorial.bookdetails.resolver.OrderResolver;
 import com.graphqljava.tutorial.bookdetails.resolver.Query;
@@ -23,7 +23,7 @@ public class GraphQLProvider {
     @Autowired
     private OrderResolver orderResolver;
     @Autowired
-    private BookResolver bookResolver;
+    private AuthorResolver authorResolver;
 
     private GraphQL graphQL;
 
@@ -41,7 +41,7 @@ public class GraphQLProvider {
     private GraphQLSchema buildSchema() {
         return SchemaParser.newParser()
                 .file("schema.graphql")
-                .resolvers(query, mutation, orderResolver, bookResolver)
+                .resolvers(query, mutation, orderResolver, authorResolver)
                 .build()
                 .makeExecutableSchema();
     }

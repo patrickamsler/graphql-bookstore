@@ -1,6 +1,7 @@
 type Query {
   bookById(id: ID): Book
   allBooks: [Book!]!
+  allAuthors: [Author!]!
   orderById(id: ID): Order
 }
 
@@ -19,6 +20,7 @@ type Author {
   id: ID
   firstName: String
   lastName: String
+  books: [Book!]!
 }
 
 type Order {

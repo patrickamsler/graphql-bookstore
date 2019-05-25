@@ -1,6 +1,7 @@
 package com.graphqljava.tutorial.bookdetails.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import com.graphqljava.tutorial.bookdetails.model.Author;
 import com.graphqljava.tutorial.bookdetails.model.Book;
 import com.graphqljava.tutorial.bookdetails.model.Order;
 import com.graphqljava.tutorial.bookdetails.repository.BookRepository;
@@ -27,6 +28,10 @@ public class Query implements GraphQLQueryResolver {
 
     public List<Book> allBooks() {
         return bookRepository.getAllBooks();
+    }
+
+    public List<Author> allAuthors() {
+        return bookRepository.getAllAuthors();
     }
 
     public Order orderById(String id) {
