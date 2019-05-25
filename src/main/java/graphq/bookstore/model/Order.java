@@ -1,4 +1,4 @@
-package com.graphqljava.tutorial.bookdetails.model;
+package graphq.bookstore.model;
 
 import java.util.Date;
 

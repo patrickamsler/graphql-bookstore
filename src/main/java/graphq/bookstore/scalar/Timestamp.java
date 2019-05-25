@@ -1,4 +1,4 @@
-package com.graphqljava.tutorial.bookdetails.scalar;
+package graphq.bookstore.scalar;
 
 import graphql.schema.*;
 

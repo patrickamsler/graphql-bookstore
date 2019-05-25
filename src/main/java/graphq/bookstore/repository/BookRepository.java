@@ -1,7 +1,7 @@
-package com.graphqljava.tutorial.bookdetails.repository;
+package graphq.bookstore.repository;
 
-import com.graphqljava.tutorial.bookdetails.model.Author;
-import com.graphqljava.tutorial.bookdetails.model.Book;
+import graphq.bookstore.model.Author;
+import graphq.bookstore.model.Book;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

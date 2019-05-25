@@ -1,9 +1,9 @@
-package com.graphqljava.tutorial.bookdetails.resolver;
+package graphq.bookstore.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
-import com.graphqljava.tutorial.bookdetails.model.Order;
-import com.graphqljava.tutorial.bookdetails.repository.BookRepository;
-import com.graphqljava.tutorial.bookdetails.repository.OrderRepository;
+import graphq.bookstore.model.Order;
+import graphq.bookstore.repository.BookRepository;
+import graphq.bookstore.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
