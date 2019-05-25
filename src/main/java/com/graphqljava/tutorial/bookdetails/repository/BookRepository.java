@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public class BookRepository {
 
-    private static List<Book> books = new ArrayList<>();
+    private static final List<Book> books = new ArrayList<>();
 
     static {
         books.add(new Book("book-1", "Harry Potter and the Philosopher's Stone", 223,

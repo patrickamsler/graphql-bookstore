@@ -1,6 +1,11 @@
 type Query {
   bookById(id: ID): Book
   allBooks: [Book!]!
+  orderById(id: ID): Order
+}
+
+type Mutation {
+  createOrder(bookId: ID): Order
 }
 
 type Book {
@@ -14,4 +19,9 @@ type Author {
   id: ID
   firstName: String
   lastName: String
+}
+
+type Order {
+  id: ID
+  book: Book
 }
