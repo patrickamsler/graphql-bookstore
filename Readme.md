@@ -1,5 +1,7 @@
 #GraphQL Bookstore
 
+build application: `gradle build`
+
 start application: `gradle bootRun`
 
 GraphQL endpoint: `http://localhost:8080/graphql`
