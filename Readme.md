@@ -1,10 +1,13 @@
 #GraphQL Bookstore
+Spring boot GraphQL example application.
+The application uses [graphql-java-tools](https://github.com/graphql-java-kickstart/graphql-java-tools) 
+with a [schema-first](src/main/resources/schema.graphql) development approach.
 
-build application: `gradle build`
+Build the application: `gradle build`
 
-start application: `gradle bootRun`
+Start the Spring boot application: `gradle bootRun`
 
-GraphQL endpoint: `http://localhost:8080/graphql`
+Access GraphQL endpoint: `http://localhost:8080/graphql`
 
 ##Queries
  
