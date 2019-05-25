@@ -46,6 +46,7 @@ Create order
 mutation {
   createOrder(bookId: "book-2" ) {
     id
+    orderDate
     book {
       id
       name
