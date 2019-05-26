@@ -5,8 +5,8 @@ import graphql.bookstore.resolver.AuthorResolver;
 import graphql.bookstore.resolver.Mutation;
 import graphql.bookstore.resolver.OrderResolver;
 import graphql.bookstore.resolver.Query;
-import graphql.bookstore.scalar.Timestamp;
 import graphql.GraphQL;
+import graphql.bookstore.util.Scalars;
 import graphql.schema.GraphQLSchema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -43,7 +43,7 @@ public class GraphQLProvider {
         return SchemaParser.newParser()
                 .file("schema.graphql")
                 .resolvers(query, mutation, orderResolver, authorResolver)
-                .scalars(Timestamp.buildScalar())
+                .scalars(Scalars.TIME_STAMP)
                 .build()
                 .makeExecutableSchema();
     }
