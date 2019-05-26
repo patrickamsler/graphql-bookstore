@@ -2,6 +2,7 @@
 GraphQL example application.
 The application uses Spring Boot and [graphql-java-tools](https://github.com/graphql-java-kickstart/graphql-java-tools) 
 with a [schema-first](src/main/resources/schema.graphql) development approach.
+If you prefer a code first approach, have a look at this [repo](https://github.com/patrickamsler/graphql-bookstore-codefirst)
 
 Build the project: `gradle build`
 
